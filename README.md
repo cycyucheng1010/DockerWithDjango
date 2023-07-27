@@ -1,6 +1,6 @@
 # DockerWithDjango
 * My first docker image with Django
-
+* 2023.07.27
 ## Step
 
 1. create a virtual environment
