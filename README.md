@@ -36,7 +36,7 @@ CMD ["python","manage.py","runserver","0.0.0.0:9487"]
 4. build the docker image and run it
 ```
 docker build --tag dockerdemo:latest .
-docker run --name dockerdemo -d -p 8000:8000 dockerdemo:latest
+docker run --name dockerdemo -d -p 9487:9487 dockerdemo:latest
 ``` 
 
 ## notice
