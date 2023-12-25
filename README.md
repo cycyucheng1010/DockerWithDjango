@@ -1,7 +1,7 @@
 # DockerWithDjango
 * My first docker image with Django
 * 2023.07.27
-## Step
+## Step for Django
 
 1. Create a virtual environment
 ```python
@@ -39,5 +39,17 @@ docker build --tag dockerdemo:latest .
 docker run --name dockerdemo -d -p 9487:9487 dockerdemo:latest
 ``` 
 
-## notice
+## Notice
 * I think you do not use python-3.8, because I have some trouble in module "backports.zoneinfo". My solustion is using python3.9 and not install it. (other solution can't fix my problem)
+
+## Step for React
+* How to install nodejs on Ubuntu
+```shell
+curl -fsSL https://deb.nodesource.com/setup_16.x | bash - 
+sudo apt-get install -y nodejs
+```
+* how to run the react server
+```shell
+cd frontend
+npm start
+```
