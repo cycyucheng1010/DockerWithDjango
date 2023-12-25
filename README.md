@@ -3,7 +3,7 @@
 * 2023.07.27
 ## Step
 
-1. create a virtual environment
+1. Create a virtual environment
 ```python
 virtualenv -p /usr/bin/python3 env
 source env/bin/activate
@@ -11,10 +11,10 @@ source env/bin/activate
 deactivate
 ```
 
-2. install Django & run the project
+2. Install Django & run the project
 * just pip, I think it's easy to you
 
-3. write the Dockerfile
+3. Write the Dockerfile
 
 ```Dockerfile
 FROM python:3.9-alpine
@@ -33,7 +33,7 @@ EXPOSE 9487
 CMD ["python","manage.py","runserver","0.0.0.0:9487"]
 ```
 
-4. build the docker image and run it
+4. Build the docker image and run it
 ```
 docker build --tag dockerdemo:latest .
 docker run --name dockerdemo -d -p 9487:9487 dockerdemo:latest
