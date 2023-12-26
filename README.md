@@ -48,7 +48,7 @@ docker run --name dockerdemo -d -p 9487:9487 dockerdemo:latest
 curl -fsSL https://deb.nodesource.com/setup_16.x | bash - 
 sudo apt-get install -y nodejs
 ```
-* how to run the react server
+* How to run the react server
 ```shell
 cd frontend
 npm start

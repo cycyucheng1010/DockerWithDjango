@@ -4,7 +4,7 @@ const Home =() =>{
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://172.29.185.56:8000/')  // URL of your Django server
+        fetch('http://127.0.0.1:8000/')  // URL of your Django server
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -21,8 +21,8 @@ const Home =() =>{
     return (
         <div>
             <p>Following is the data:</p>
-            {data && <pre>{JSON.stringify(data, null, 2)}</pre>} {/* Render your data here */}
-            {error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
+            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : null} {/* Render your data here */}
+            {error ? <p style={{ color: 'red' }}>Error: {error.message}</p> : null}
         </div>
     );
 };
