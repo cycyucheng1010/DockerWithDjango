@@ -12,3 +12,4 @@ COPY . /usr/src/app
 EXPOSE 9487
 
 CMD ["python","manage.py","runserver","0.0.0.0:9487"]
+#CMD ['sh',"command.sh"]
