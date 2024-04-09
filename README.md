@@ -53,3 +53,21 @@ sudo apt-get install -y nodejs
 cd frontend
 npm start
 ```
+* docker pull image
+```
+docker pull node:16-alpine
+```
+* Dockerfile
+```
+FROM node:16-alpine
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN npm install
+EXPOSE 3000
+CMD ["npm","start"] 
+```
+* docker image
+```
+docker build --tag react:latest .
+docker run --name react -d -p 3000:3000 react:latest
+```
